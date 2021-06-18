@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_grid"
+    tools:context=".ProfileFragment">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/userpht"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:onClick="ChooseImage"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#3f51b5"
+        app:civ_shadow_radius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/teal_200"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userpht"
+        app:layout_constraintVertical_bias="0.152"
+        tools:layout_editor_absoluteX="9dp">
+
+        <TextView
+            android:id="@+id/prfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/prdaddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Address" />
+
+        <TextView
+            android:id="@+id/prdscore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_marginTop="130dp"            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Score" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="238dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="87dp"
+        android:id="@+id/logout"
+        android:layout_marginBottom="90dp"
+        android:background="@color/orange"
+        android:text="Logout"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
